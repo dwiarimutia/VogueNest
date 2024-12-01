@@ -4,7 +4,7 @@
       @click="togglePopup" 
       class="border md:p-4 p-2 rounded-lg cursor-pointer bg-white shadow-xl transition-transform duration-300 hover:scale-105"
     >
-      <img :src="product.image" alt="Product Image" class="w-full h-48 object-cover mb-2">
+      <img :src="product.image" alt="Product Image" class="w-full h-[300px] mb-2">
       <h2 class="text-base md:text-xl font-semibold">{{ product.name }}</h2>
       <p class="text-gray-600 text-sm md:text-base
       ">
@@ -71,6 +71,7 @@
 
 <script>
 export default {
+  name: 'ProductsCard',
   props: {
     product: {
       type: Object,

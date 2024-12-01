@@ -17,7 +17,7 @@
           <span class="font-bold">Hanya berlaku buat kamu yang belanja pertama kali!</span> <br> 
         </p>
         <button 
-          @click="closeBanner" 
+          @click="goToProductsCard" 
           class="mt-4 px-4 py-2 bg-white text-blue-500 font-bold rounded-lg hover:bg-gray-100 transition"
         > 
           Lihat Produk
@@ -39,6 +39,13 @@ export default {
     closeBanner() {
       this.isVisible = false; 
     },
+    goToProductsCard() {
+      const section = document.querySelector('#products-section'); // ID dari section Products
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' }); // Smooth scrolling ke section
+      }
+      this.closeBanner(); // Menyembunyikan popup setelah scroll
+    }
   },
   mounted() {
     setTimeout(() => {

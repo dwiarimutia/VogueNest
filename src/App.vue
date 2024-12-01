@@ -35,7 +35,7 @@
       </div>
     </section>
 
-    <section id="products" class="products md:p-8">
+    <section id="products-section" class="products md:p-8">
       <h2 class="text-5xl font-spicy text-center mt-16 p-8 md:p-0 mb-8">Product VogueNest</h2>
       <div class="products grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-6 md:p-8"> 
         <product-card 
@@ -131,7 +131,7 @@ export default {
           name: 'Vogue Cotton T-shirt', 
           price: '100.000', 
           description: 'Kaos katun premium yang tak hanya nyaman, tetapi juga menonjolkan gaya modern dan elegan. Desainnya yang unik akan membuat penampilanmu semakin keren, dari hangout santai hingga acara casual dengan teman-teman. Pilihan tepat untuk tampilan effortless namun tetap stylish.', 
-          image: 'https://via.placeholder.com/300' ,
+          image : require('@/assets/CottonT-shirt.jpg'),
           rating: 4.5,
           reviewsCount: 103
         },
@@ -139,7 +139,7 @@ export default {
           name: 'Urban Trendy Denim Jacket', 
           price: '250.000', 
           description: 'Jaket denim yang jadi statement dalam setiap kesempatan! Dengan desain yang chic dan fit yang pas di tubuh, jaket ini tak hanya menawarkan kenyamanan tetapi juga memberikan kesan urban yang penuh gaya. Cocok dipadukan dengan berbagai outfit untuk tampilan street style yang memukau.', 
-          image: 'https://via.placeholder.com/300',
+          image: require ('@/assets/DenimJacket.jpg'),
           rating: 5,
           reviewsCount: 100
         },
@@ -147,7 +147,7 @@ export default {
           name: 'Chic Floral Midi Dress', 
           price: '200.000', 
           description: 'Gaun midi dengan motif bunga yang anggun, memberikan sentuhan feminin pada setiap gerakanmu. Dengan potongan yang memeluk tubuh dengan sempurna, gaun ini memberikan kesan elegan dan segar, siap menemani acara spesial maupun pesta malam. Percaya diri dalam setiap langkah dengan Chic Floral Midi Dress!', 
-          image: 'https://via.placeholder.com/300', 
+          image: require ('@/assets/FloralMidiDress.jpg'),
           rating: 4,
           reviewsCount: 50
         },
@@ -155,7 +155,7 @@ export default {
           name: 'Cozy Knit Sweater', 
           price: '200.000', 
           description: 'Nikmati kenyamanan tiada tara dengan sweater rajut yang lembut dan hangat ini. Desain yang simpel dan timeless membuatnya mudah dipadukan dengan berbagai gaya, baik itu untuk santai di rumah atau jalan-jalan di musim dingin. Rasakan kenyamanan dan kehangatan yang membawa kesan elegan di setiap kesempatan.', 
-          image: 'https://via.placeholder.com/300',
+          image: require ('@/assets/KnitSweater.jpg'),
           rating: 4,
           reviewsCount: 70
          },
@@ -163,7 +163,7 @@ export default {
           name: 'Signature Wool Coat', 
           price: '200.000', 
           description: 'Mantel wol yang tak hanya menghangatkan, tetapi juga menambah pesona pada penampilanmu. Dengan desain klasik yang tak lekang oleh waktu, mantel ini siap menemani hari-harimu dengan sentuhan elegan dan nyaman. Gaya formal, namun tetap stylish—membuatmu terlihat chic di musim dingin.', 
-          image: 'https://via.placeholder.com/300',
+          image: require ('@/assets/WoolCoat.jpg'),
           rating: 5,
           reviewsCount: 89
          },
@@ -171,7 +171,7 @@ export default {
           name: 'Sport Shorts', 
           price: '200.000', 
           description: 'Siap beraksi dengan celana pendek olahraga yang ringan dan elastis ini! Dibuat untuk memberi keleluasaan dalam bergerak, Sport Shorts adalah pilihan tepat untuk berolahraga, berlari, atau bahkan hanya bersantai di akhir pekan. Tampil sporty dengan tetap nyaman!', 
-          image: 'https://via.placeholder.com/300', 
+          image: require ('@/assets/SportShort.jpg'),
           rating: 3.5,
           reviewsCount: 73
         },
@@ -179,7 +179,7 @@ export default {
           name: 'Sweat Pants', 
           price: '200.000', 
           description: 'Celana sweat yang nyaman ini bukan hanya untuk olahraga, tetapi juga jadi pilihan tepat untuk bersantai di rumah atau jalan-jalan santai. Dengan bahan lembut dan fit yang pas, Sweat Pants ini memberikan kelembutan di kulit sekaligus fleksibilitas yang kamu butuhkan dalam aktivitas sehari-hari.', 
-          image: 'https://via.placeholder.com/300',
+          image: require ('@/assets/SweatPants.jpg'),
           rating: 4,
           reviewsCount: 68
         },
@@ -187,7 +187,7 @@ export default {
           name: 'Casual Summer Dress', 
           price: '200.000', 
           description: 'Gaun musim panas yang ringan dan flowy ini memberikan kesan segar dan chic di setiap langkah. Dengan desain yang effortless, gaun ini sempurna untuk acara santai atau liburan musim panas. Kenakan dengan sandal kesukaanmu dan nikmati hari cerah penuh gaya!', 
-          image: 'https://via.placeholder.com/300',
+          image: require ('@/assets/SummerDress.jpg'),
           rating: 4,
           reviewsCount: 98
         },
@@ -195,7 +195,7 @@ export default {
           name: 'Comfortable Knit Top', 
           price: '200.000', 
           description: 'Atasan rajut yang super nyaman dan serbaguna. Mudah dipadankan dengan jeans atau rok, memberikan kesan santai namun tetap chic. Bahan yang elastis memberikan kenyamanan ekstra, membuatmu tetap stylish sepanjang hari, baik untuk aktivitas outdoor maupun acara santai di rumah.', 
-          image: 'https://via.placeholder.com/300',
+          image: require ('@/assets/ComfortableKnitTop.jpg'),
           rating: 5,
           reviewsCount: 105
         },
@@ -203,12 +203,36 @@ export default {
       ],
 
       testimonials: [
-      { name: "Dewi Ayu", message: "Pelayanan sangat ramah dan kualitas produk sangat memuaskan!", date: "15 November 2024", image: 'https://via.placeholder.com/300' },
-      { name: "Putra Wijaya", message: "Harga terjangkau dan barang sesuai dengan deskripsi!", date: "10 November 2024", image: 'https://via.placeholder.com/300' },
-      { name: "Siti Aminah", message: "Barang sampai tepat waktu dan kualitasnya sangat bagus!", date: "8 November 2024", image: 'https://via.placeholder.com/300' },      
-      { name: "Dwiari", message: "wahhh cantik bangett produknya", date: "15 November 2024", image: 'https://via.placeholder.com/300' },
-      { name: "Andini", message: "anjay kerenn banget disini kawan", date: "10 November 2024", image: 'https://via.placeholder.com/300' },
-      { name: "Ayu Mas", message: "yahaha bagus banget asli beb", date: "8 November 2024", image: 'https://via.placeholder.com/300' },
+      { name: "Dewi Ayu", 
+        message: "Pelayanan sangat ramah dan kualitas produk sangat memuaskan!", 
+        date: "15 November 2024", 
+        image: require ('@/assets/pp1.jpg')
+      },
+      { name: "Putra Wijaya", 
+        message: "Harga terjangkau dan barang sesuai dengan deskripsi!", 
+        date: "10 November 2024", 
+        image: require ('@/assets/pp2.jpg')
+      },
+      { name: "Siti Aminah", 
+        message: "Barang sampai tepat waktu dan kualitasnya sangat bagus!", 
+        date: "8 November 2024", 
+        image: require ('@/assets/pp3.jpg')
+      },      
+      { name: "Maya Aurelia", 
+        message: "Kualitas produknya luar biasa! Detailnya sangat rapi dan terlihat premium. Recommended banget!", 
+        date: "15 November 2024", 
+        image: require ('@/assets/pp4.jpg')
+      },
+      { name: "Naya Elvina", 
+        message: "Harganya sangat sepadan dengan kualitas yang didapat. Tidak mengecewakan sama sekali!", 
+        date: "10 November 2024", 
+        image: require ('@/assets/pp5.jpg')
+      },
+      { name: "Arka Alvaro", 
+        message: "Saya pasti akan kembali belanja di sini. Sangat direkomendasikan untuk yang mencari produk berkualitas.", 
+        date: "8 November 2024", 
+        image: require ('@/assets/pp6.jpg')
+      },
       ],
     };
   },
