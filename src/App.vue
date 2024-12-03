@@ -35,7 +35,7 @@
       </div>
     </section>
 
-    <section id="products-section" class="products md:p-8">
+    <section id="products" class="products md:p-8">
       <h2 class="text-5xl font-spicy text-center mt-16 p-8 md:p-0 mb-8">Product VogueNest</h2>
       <div class="products grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-6 md:p-8"> 
         <product-card 
@@ -75,11 +75,11 @@
         </div>
 
         <div class="w-full md:w-2/3 text-center md:text-left mr-[50px]">
-          <h2 class="text-5xl md:text-5xl font-spicy mt-8 md:mt-16 mb-8">About Us</h2>
-          <p class="mt-4 mb-4 text-base md:text-lg text-justify leading-relaxed">
+          <h2 class="text-5xl md:text-5xl font-spicy mt-8 md:mt-16 mb-8 ml-10">About Us</h2>
+          <p class="mt-4 mb-4 text-base md:text-lg text-justify leading-relaxed ml-10">
             Selamat datang di <strong>VogueNest</strong>, tempat di mana gaya, kualitas, dan kenyamanan bertemu. Kami hadir dengan koleksi pakaian yang dirancang khusus untuk kamu yang ingin tampil trendi dan percaya diri setiap hari. Setiap produk kami dibuat dengan bahan pilihan, mengikuti tren mode terkini tanpa mengorbankan kenyamanan.
           </p>
-          <p class="mt-4 mb-6 text-base md:text-lg text-justify leading-relaxed">
+          <p class="mt-4 mb-6 text-base md:text-lg text-justify leading-relaxed ml-10">
             Kami percaya bahwa setiap orang berhak memiliki pakaian yang tidak hanya tampak bagus, tetapi juga nyaman dikenakan. Mulai dari kaos kasual, jaket stylish, hingga koleksi pakaian lainnya, kami selalu berkomitmen untuk memberikan yang terbaik. Temukan gaya kamu di <strong>VogueNest</strong> dan jadilah dirimu sendiri dengan percaya diri!
           </p>
         </div>
@@ -87,7 +87,7 @@
     </section>
 
 
-    <section>
+    <section id="contact">
       <ContactUsF />
     </section>
 

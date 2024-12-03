@@ -40,7 +40,7 @@ export default {
       this.isVisible = false; 
     },
     goToProductsCard() {
-      const section = document.querySelector('#products-section'); // ID dari section Products
+      const section = document.querySelector('#products'); // ID dari section Products
       if (section) {
         section.scrollIntoView({ behavior: 'smooth' }); // Smooth scrolling ke section
       }
